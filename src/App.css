@@ -32,7 +32,73 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border: 1px solid #333;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.square:hover {
+  background: #f0f0f0;
+}
+
+.square:focus {
+  outline: none;
+  background: #ddd;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
 }
